@@ -26,6 +26,10 @@ export let useTeamStore = defineStore('team', {
 
     grow(spots) {
       this.spots = spots
+    },
+
+    removeMember(id) {
+      this.members = this.members.filter((obj) => obj.id !== id)
     }
   },
 

@@ -29,7 +29,7 @@ defineProps({
               @click="$emit('close')"
               class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
             >
-              Default Close
+              Close
             </button>
           </footer>
         </slot>

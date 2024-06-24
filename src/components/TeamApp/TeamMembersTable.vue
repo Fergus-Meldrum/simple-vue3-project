@@ -16,9 +16,9 @@ let team = useTeamStore()
     <tbody>
       <TeamMember
         v-for="member in team.members"
+        :id="member.id"
         :name="member.name"
         :email="member.email"
-        :status="member.status"
       />
     </tbody>
   </table>

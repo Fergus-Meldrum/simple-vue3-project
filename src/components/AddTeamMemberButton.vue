@@ -19,10 +19,10 @@ let team = useTeamStore()
   <Teleport to="body">
     <ModalTemplate :open="showModal" @close="showModal = false">
       <template #header>
-        <header>SWAGGERMOUNT PRODUCTIONS</header>
+        <header>Add User</header>
       </template>
       <template #body>
-        <p>You need to add a new user to the group</p>
+        <p>Add a new user to your group</p>
         <div class="flex mt-2">
           <input type="email" class="flex-1" />
           <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">

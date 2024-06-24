@@ -1,8 +1,10 @@
 <script setup>
+import RemoveTeamMemberButton from '@/components/RemoveTeamMemberButton.vue'
+
 defineProps({
+  id: Number,
   name: String,
-  email: String,
-  status: String
+  email: String
 })
 </script>
 
@@ -14,7 +16,7 @@ defineProps({
     </td>
     <td class="text-gray-500 px-6 py-4">{{ email }}</td>
     <td class="px-6 py-4">
-      <button class="text-green-400 text-xl">{{ status }}</button>
+      <RemoveTeamMemberButton :id="id" :name="name" />
     </td>
   </tr>
 </template>
