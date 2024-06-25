@@ -28,9 +28,8 @@ async function removeTeamMember() {
       <template #body>
         <p>Are you sure you want to remove {{ name }} from the team?</p>
         <div class="flex mt-2">
-          <input type="email" class="flex-1" />
           <button
-            class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
+            class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded ml-auto"
             @click="removeTeamMember()"
           >
             Remove User
