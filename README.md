@@ -1,4 +1,4 @@
-# Membership App
+# Team Membership App
 
 This is a simple membership app built with Vite. The app allows you to add and remove members from a team. There is no database involved; changes are stored in the Pinea Store.
 
