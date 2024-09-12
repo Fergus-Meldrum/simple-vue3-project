@@ -10,8 +10,8 @@ let team = useTeamStore()
     <div>
       <AddTeamMemberButton />
     </div>
-    <div>
-      <div class="inline-flex items-center text-3xl relative">
+    <div class="inline-flex items-center">
+      <div class="flex items-center text-3xl relative">
         <img src="/smiley.png" alt="" class="mr-2" />
         <h3>{{ team.name }}</h3>
         <div
@@ -19,6 +19,9 @@ let team = useTeamStore()
         >
           {{ team.spots }}
         </div>
+      </div>
+      <div class="ml-4">
+        Button
       </div>
     </div>
   </header>
