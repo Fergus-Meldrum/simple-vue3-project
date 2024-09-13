@@ -20,9 +20,7 @@ let team = useTeamStore()
           {{ team.spots }}
         </div>
       </div>
-      <div class="ml-4">
-        Button
-      </div>
+      <div class="ml-4"><font-awesome-icon :icon="['fas', 'gear']" /></div>
     </div>
   </header>
 </template>
