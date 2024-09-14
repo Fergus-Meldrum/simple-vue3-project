@@ -1,6 +1,7 @@
 <script setup>
 import { useTeamStore } from '@/stores/TeamStore.js'
-import AddTeamMemberButton from '@/components/AddTeamMemberButton.vue'
+import AddTeamMemberButton from '@/components/ButtonModals/AddTeamMemberButton.vue'
+import UpdateSettingsButton from '@/components/ButtonModals/UpdateSettingsButton.vue'
 
 let team = useTeamStore()
 </script>
@@ -20,7 +21,7 @@ let team = useTeamStore()
           {{ team.spots }}
         </div>
       </div>
-      <div class="ml-4"><font-awesome-icon :icon="['fas', 'gear']" /></div>
+      <div class="ml-5"><UpdateSettingsButton /></div>
     </div>
   </header>
 </template>
