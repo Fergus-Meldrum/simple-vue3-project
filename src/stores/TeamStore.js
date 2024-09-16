@@ -24,10 +24,6 @@ export let useTeamStore = defineStore('team', {
       // this.$state = r.default
     },
 
-    grow(spots) {
-      this.spots = spots
-    },
-
     addMember(name, email) {
       // Determine the new ID based on the last member's ID in the array
       const newId = this.members.length > 0 ? this.members[this.members.length - 1].id + 1 : 1
