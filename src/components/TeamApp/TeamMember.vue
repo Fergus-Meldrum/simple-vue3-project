@@ -1,5 +1,5 @@
 <script setup>
-import RemoveTeamMemberButton from '@/components/RemoveTeamMemberButton.vue'
+import RemoveTeamMemberButton from '@/components/ButtonModals/RemoveTeamMemberButton.vue'
 
 defineProps({
   id: Number,
@@ -22,3 +22,4 @@ defineProps({
 </template>
 
 <style scoped></style>
+@/components/ButtonModals/RemoveTeamMemberButton.vue

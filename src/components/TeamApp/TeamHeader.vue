@@ -1,6 +1,7 @@
 <script setup>
 import { useTeamStore } from '@/stores/TeamStore.js'
-import AddTeamMemberButton from '@/components/AddTeamMemberButton.vue'
+import AddTeamMemberButton from '@/components/ButtonModals/AddTeamMemberButton.vue'
+import UpdateSettingsButton from '@/components/ButtonModals/UpdateSettingsButton.vue'
 
 let team = useTeamStore()
 </script>
@@ -10,8 +11,8 @@ let team = useTeamStore()
     <div>
       <AddTeamMemberButton />
     </div>
-    <div>
-      <div class="inline-flex items-center text-3xl relative">
+    <div class="inline-flex items-center">
+      <div class="flex items-center text-3xl relative">
         <img src="/smiley.png" alt="" class="mr-2" />
         <h3>{{ team.name }}</h3>
         <div
@@ -20,6 +21,7 @@ let team = useTeamStore()
           {{ team.spots }}
         </div>
       </div>
+      <div class="ml-5"><UpdateSettingsButton /></div>
     </div>
   </header>
 </template>
